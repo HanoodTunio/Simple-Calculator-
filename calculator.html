@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple Calculator </title>
+    <link rel="icon" href="logo.png" type="image/x-icon" >
+    <style>
+        h1 {
+            width: 120x;
+            color: black;
+            font-size: 60px;
+            font-weight: bold;
+            text-align: center;
+            position: absolute;
+            left: 450px;
+            top: 80px;
+        }
+
+        body {
+            background-color: #5e8aa1;
+            background-image: url(cute.gif);
+            background-repeat: no-repeat;
+            background-position: right center;
+            background-attachment: fixed;
+        }
+
+        * {
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+        }
+
+        .wrap {
+            width: 500px;
+            margin: 150px;
+            height: 0px;
+            background-color: none;
+            padding: 20px;
+        }
+
+        input[type=text] {
+            width: 100%;
+            font-size: 22px;
+            font-weight: bold;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 5px;
+
+        }
+
+        input[type=button] {
+            width: 24.2%;
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: 3s all ease;
+
+        }
+
+        #del {
+            width: 100%;
+        }
+
+        input[type=button]:hover {
+            color: rgb(189, 7, 7);
+            box-shadow: 0px 3px 12px 7px #0276b5;
+        }
+
+        input[type=button]:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <img src="logo3.png" width=230x height=200px alt="logo" align="up">
+
+
+
+    <h1> Simple Calculator </h1>
+    <div style="position:absolute; left:230px; top:300px">
+        <p>
+            <font size="+3"> Online calculator for quick calculations</font>
+        </p>
+    </div>
+
+    <div class="wrap">
+        <form name="cal">
+            <input type="text" name="display">
+            <br><br>
+            <input type="button" value="9" onclick="cal.display.value+='9'">
+            <input type="button" value="8" onclick="cal.display.value+='8'">
+            <input type="button" value="7" onclick="cal.display.value+='7'">
+            <input type="button" value="+" onclick="cal.display.value+='+'">
+            <br><br>
+            <input type="button" value="6" onclick="cal.display.value+='6'">
+            <input type="button" value="5" onclick="cal.display.value+='5'">
+            <input type="button" value="4" onclick="cal.display.value+='4'">
+            <input type="button" value="-" onclick="cal.display.value+='-'">
+            <br><br>
+            <input type="button" value="3" onclick="cal.display.value+='3'">
+            <input type="button" value="2" onclick="cal.display.value+='2'">
+            <input type="button" value="1" onclick="cal.display.value+='1'">
+            <input type="button" value="*" onclick="cal.display.value+='*'">
+            <br><br>
+            <input type="button" value="0" onclick="cal.display.value+='0'">
+            <input type="button" value="/" onclick="cal.display.value+='/'">
+            <input type="button" value="%" onclick="cal.display.value+='%'">
+            <input type="button" value="=" onclick="cal.display.value=eval(cal.display.value)">
+            <br><br>
+            <input type="button" value="Delete" onclick="cal.display.value= '' " id="del">
+
+            <div style="position:absolute; left:250px; top:850px">
+                <p>
+                    <font size="+3.5"> "Thank you for your time"</font>
+                </p>
+            </div>
+
+
+        </form>
+
+    </div>
+
+        <div style="position:absolute; right:50px; top:900px">
+            <p>Web Doveloper: Hanood Tunio</p>
+            <p><a href="mailto:hanood.tunio@gmail.com">hanood.tunio@gmail.com</a></p>
+        </div>
+
+</body>
+
+</html>
